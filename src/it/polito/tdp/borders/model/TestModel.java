@@ -8,8 +8,18 @@ public class TestModel {
 
 		System.out.println("TestModel -- TODO");
 		
-//		System.out.println("Creo il grafo relativo al 2000");
-//		model.createGraph(2000);
+		System.out.println("Creo il grafo relativo al 2000");
+		model.creaGrafo(2000);
+		
+		System.out.println("Grafo creato : "+model.getVertexSize() + " vertici "
+				+ "e "+model.getEdgeSize()+" archi");
+		
+		System.out.println("Elenco delle nazioni e del numero di stati confinanti");
+		
+		System.out.println(model.gradoCountries());
+		
+		System.out.println(model.numeroComponentiConnesse());
+
 		
 //		List<Country> countries = model.getCountries();
 //		System.out.format("Trovate %d nazioni\n", countries.size());
